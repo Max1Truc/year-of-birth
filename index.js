@@ -19,7 +19,7 @@ function onSubmit(e) {
     } else {
         year.innerText = "You're born in " + yr_formula;
         
-        year.style.fontSize = "x-large";
+        year.style.fontSize = "xx-large";
 
         age.value = '';
     }
