@@ -11,7 +11,7 @@ function onSubmit(e) {
     // The formula used
     yr_formula = 67 - age.value + 1952
 
-    if (age.value === '' || age.value.length > 4) {
+    if (age.value === '' || age.value.toString().length > 4) {
         msg.innerHTML = "Please, enter your age!" 
 
         setTimeout(() => msg.remove(), 3000);
