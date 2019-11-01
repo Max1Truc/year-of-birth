@@ -1,0 +1,42 @@
+body {
+    font-size: 20px;
+    font-family: 'Noto Sans', sans-serif;
+    width: 50%;
+    margin: 15% auto;
+    color: #1b1b1b;
+    text-align: center;
+    background-color: #efefef;
+}
+
+p {
+    font-size: 1em;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+input[type="number"] {
+    padding: 10px;
+    margin: 10px;
+    font-size: 0.9em;
+    border: 1px;
+    border-collapse: 5px;
+    font-family: inherit;
+}
+
+input[type="submit"] {
+    background-color: #1b1b1b;
+    font-family: inherit;
+    padding: 10px;
+    color: white;
+    border-collapse: 5px;
+    border: 1px solid #1d1d1d;
+}
+
+@media (max-width: 768px) {
+    body {
+        width: 80%;
+        margin: 30% auto;
+    }
+}
