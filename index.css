@@ -37,6 +37,6 @@ input[type="submit"] {
 @media (max-width: 768px) {
     body {
         width: 80%;
-        margin: 30% auto;
+        margin: 50% auto;
     }
 }
