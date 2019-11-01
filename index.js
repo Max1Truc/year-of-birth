@@ -17,12 +17,9 @@ function onSubmit(e) {
         setTimeout(() => msg.remove(), 3000);
 
     } else {
-        const yr = document.createElement('yr');
-        yr.append(document.createTextNode("You're born in " + yr_formula))
-
-        yr.style.fontSize = "xx-large";
-
-        year.append(yr)
+        year.innerText = "You're born in " + yr_formula;
+        
+        year.style.fontSize = "x-large";
 
         age.value = '';
     }
