@@ -9,7 +9,8 @@ function onSubmit(e) {
     e.preventDefault();
 
     // The formula used
-    yr_formula = 67 - age.value + 1952
+    var current_year = new Date().getFullYear();
+    var yr_formula = current_year - age.value;
 
     const len = Math.ceil(Math.log10(age.value + 1));
 
