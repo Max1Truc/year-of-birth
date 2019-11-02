@@ -11,14 +11,21 @@ function onSubmit(e) {
     // The formula used
     yr_formula = 67 - age.value + 1952
 
-    if (age.value === '' || age.value.split('').length > 4) {
+    const len = Math.ceil(Math.log10(age.value + 1));
+
+    if (age.value === '') {
         msg.innerHTML = "Please, enter your age!" 
 
         setTimeout(() => msg.remove(), 3000);
 
-    } else {
-        year.innerText = "You're born in " + yr_formula;
+    } else if (len > 4) {
+        msg.innerHTML = "Please, enter your age and not your year!";
+
+        setTimeout(() => msg.remove(), 3000);
         
+    } else {
+        year.innerHTML = "You're born in " + yr_formula;
+
         year.style.fontSize = "xx-large";
 
         age.value = '';
